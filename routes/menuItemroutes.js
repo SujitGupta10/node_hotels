@@ -19,7 +19,7 @@ router.post('/',async(req,res)=>{
       const data = req.body// Assuming the requesst body contains the person data
 
       //Create a new Person document using Mongoose model
-      const newMenu = new MenuItem(data);
+      const newMenu = new Menuitem(data);
 
       //Save the new Person to the database
       const response = await newMenu.save();
